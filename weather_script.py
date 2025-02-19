@@ -4,7 +4,7 @@ from datetime import datetime
 import os
 import pandas as pd
 CITY ="Seoul"
-API_KEY="os.getenv("OPENWEATHER_API_KEY")
+API_KEY=os.getenv("OPENWEATHER_API_KEY")
 url = f"http://api.openweathermap.org/data/2.5/weather?q={CITY}&appid={API_KEY}&units=metric"
 
 data =requests.get(url).json()
